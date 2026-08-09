@@ -1,12 +1,5 @@
-/* hola */
-
-$colorbase: #1e0f77;
-
-$reset: (
-    margin: 0,
-    padding: 0,
-    box-sizing: border-box
-);
+@use 'reset' as *;
+@use 'variables' as *;
 
 header {
     background-color: $colorbase;
