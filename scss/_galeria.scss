@@ -14,7 +14,11 @@
         text-align: center;
 
         h2 {
+            margin: 0;
             color: $color-blanco;
+            font-size: clamp(2rem, 4vw, 3rem);
+            line-height: 1.1;
+            font-weight: 700;
         }
 
         span {
@@ -67,7 +71,7 @@
         align-items: center;
         justify-content: center;
 
-        background-color: rgb(13,13,13,0.55);
+        background-color: rgba(13,13,13,0.55);
         opacity: 0;
         transition: opacity 0.4s ease;
 
@@ -75,6 +79,8 @@
             color: $color-blanco;
             font-weight: 700;
             letter-spacing: 2px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
         }
 
     }
