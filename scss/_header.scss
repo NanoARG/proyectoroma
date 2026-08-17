@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 .hero {
     position: relative;
     min-height: 100vh;
@@ -17,10 +19,157 @@
     &__content {
         position: relative;
         z-index: 2;
+
+        min-height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+
+        h1 {
+            font-size: clamp(3rem, 7vw, 7rem);
+            line-height: 0.95;
+            margin: 0;
+            color: $color-blanco;
+        }
+
+        p {
+            max-width: 600px;
+            margin: 25px 0 30px;
+
+            color: $color-blanco;
+
+            font-size: 1.25rem;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+
+        .hero__boton {
+            display: inline-block;
+            padding: 14px 32px;
+            background-color: $color-violeta;
+            color: $color-blanco;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+
+            &:hover {
+                background-color: $color-verde;
+                transform: translateY(-3px);
+            }
+        }
     }
 
     .navbar {
         position: relative;
         z-index: 3;
+
+        .navbar-brand {
+            color: $color-blanco;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            line-height: 0.9;
+            font-size: 1.8rem;
+            font-weight: 700;
+
+            span {
+                color: $color-blanco;
+                letter-spacing: 1px;
+            }
+
+            small {
+                color: $color-violeta;
+                font-size: 0.6em;
+                letter-spacing: 2px;  
+            }
+
+            &:hover {
+                color: $color-blanco;
+            }
+        }
+
+        .navbar-nav {
+            gap: 8px;
+        }
+
+        .nav-link {
+            color: $color-blanco;
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 8px 14px;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: $color-violeta;
+            }
+        }
+
+        .navbar-toggler {
+            border: 1px solid $color-violeta;
+            padding: 8px;
+            transition: border-color 0.3s ease;
+
+            &:hover {
+                border-color: $color-verde;
+            }
+        }
+
+        .navbar-toggler-icon {
+            filter: brightness(0) invert(1);
+        }
+
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+
+        background: linear-gradient(
+            to bottom,
+            rgba(13,13,13,1) 0%,
+            rgba(13,13,13,0.60) 30%,
+            rgba(13,13,13,0) 60%
+        );
+        z-index: 1;
+    }
+
+    @media (max-width: 991.98px) {
+        
+        .navbar-collapse {
+            width: 100%;
+            background-color: rgba(13,13,13,0.95);
+        }
+
+        .navbar-nav {
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            padding: 25px 0;
+        }
+    
+        .nav-link {
+            text-align: center;
+            width: 100%;
+            padding: 12px 20px;
+            font-size: 1.1rem;
+
+            transition: color 0.3s ease, transform 0.3s ease;
+
+            &:hover {
+                color: $color-violeta;
+                transform: translateX(4px);
+            }
+
+        .nav-link.active {
+            color: $color-violeta;
+        }
+
+        }
     }
 }
