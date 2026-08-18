@@ -1,0 +1,108 @@
+@use 'variables' as *;
+
+.footer {
+    background-color: $color-negro;
+    color: $color-blanco;
+
+    &__contenido {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 60px 20px;
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        color: $color-blanco;
+        text-decoration: none;
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 0.9;
+        letter-spacing: 1px;
+
+        span {
+            color: $color-violeta;
+            font-size: 0.65rem;
+            letter-spacing: 2px;
+        }
+
+        &:hover {
+            color: $color-blanco;
+        }
+    }
+
+    &__info {
+
+        p {
+            margin: 15px 0 0;
+            color: rgba(255,255,255,0.75);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+    }
+
+    &__redes {
+        h2 {
+            margin: 0 0 20px;
+            color: $color-blanco;
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            margin-bottom: 10px;
+
+        }
+
+        a {
+            color: rgba(255,255,255,0.75);
+            text-decoration: none;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: $color-verde;
+            }
+        }
+    }    
+
+    &__copyright {
+        border-top: 1px solid rgba(255,255,255,0.1);
+        padding: 20px;
+        text-align: center;
+
+        p {
+            margin: 0;
+            color: rgba(255,255,255,0.5);
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        &__contenido {
+            flex-direction: column;
+            gap: 40px;
+            padding: 50px 20px;
+        }
+
+        &__redes {
+            text-align: left;
+        }
+
+        &__copyright {
+            padding: 20px 15px;
+        }
+    }
+}

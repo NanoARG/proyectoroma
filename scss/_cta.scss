@@ -1,0 +1,56 @@
+@use 'variables' as *;
+
+.cta {
+    background-color: $color-purpura-2;
+    padding: 90px 20px;
+    text-align: center;
+
+    &__contenido {
+        max-width: 700px;
+        margin: 0 auto;
+    
+        h2 {
+            margin: 0 0 30px;
+            color: $color-blanco;
+            font-size: clamp(2rem, 4vw, 3rem);
+            line-height: 1.1;
+            font-weight: 700;
+
+            &::after {
+                content: "";
+                display: block;
+                width: 200px;
+                height: 3px;
+                margin: 20px auto 0;
+                background-color: $color-violeta;
+            }
+        }
+        
+        p {
+            margin: 0 0 30px;
+            color: rgba(255,255,255,0.75);
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+    }
+
+    &__boton {
+            display: inline-block;
+            padding: 14px 32px;
+            background-color: $color-violeta;
+            color: $color-blanco;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            border-radius: 5px;
+            
+            transition: background-color 0.8s ease, transform 0.8s ease;
+            
+            &:hover {
+                background-color: $color-verde;
+                transform: translateY(-3px);
+            }
+
+        }
+}

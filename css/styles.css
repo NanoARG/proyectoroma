@@ -304,4 +304,136 @@
   grid-row: 2/3;
 }
 
+.cta {
+  background-color: #2A1C33;
+  padding: 90px 20px;
+  text-align: center;
+}
+.cta__contenido {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.cta__contenido h2 {
+  margin: 0 0 30px;
+  color: #FFFFFF;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.1;
+  font-weight: 700;
+}
+.cta__contenido h2::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 3px;
+  margin: 20px auto 0;
+  background-color: #9955C2;
+}
+.cta__contenido p {
+  margin: 0 0 30px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.cta__boton {
+  display: inline-block;
+  padding: 14px 32px;
+  background-color: #9955C2;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border-radius: 5px;
+  transition: background-color 0.8s ease, transform 0.8s ease;
+}
+.cta__boton:hover {
+  background-color: #1F7F59;
+  transform: translateY(-3px);
+}
+
+.footer {
+  background-color: #0D0D0D;
+  color: #FFFFFF;
+}
+.footer__contenido {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.footer__logo {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: 1px;
+}
+.footer__logo span {
+  color: #9955C2;
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+}
+.footer__logo:hover {
+  color: #FFFFFF;
+}
+.footer__info p {
+  margin: 15px 0 0;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.footer__redes h2 {
+  margin: 0 0 20px;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.footer__redes ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer__redes li {
+  margin-bottom: 10px;
+}
+.footer__redes a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer__redes a:hover {
+  color: #1F7F59;
+}
+.footer__copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+.footer__copyright p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .footer__contenido {
+    flex-direction: column;
+    gap: 40px;
+    padding: 50px 20px;
+  }
+  .footer__redes {
+    text-align: left;
+  }
+  .footer__copyright {
+    padding: 20px 15px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
