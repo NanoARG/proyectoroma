@@ -64,6 +64,14 @@
         }
     }
 
+    &--interno {
+
+        min-height: 50vh;
+
+        .hero__content {
+            min-height: 50vh;
+        }
+    }
     .navbar {
         position: relative;
         z-index: 3;
