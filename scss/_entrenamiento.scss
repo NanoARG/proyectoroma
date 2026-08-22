@@ -1,0 +1,72 @@
+@use 'variables' as *;
+
+.entrenamiento {
+
+    background-color: $color-purpura-2;
+    color: $color-blanco;
+    padding: 100px 20px;
+
+    &__intro {
+
+        max-width: 750px;
+        margin: 0 auto 60px;
+        text-align: center;
+    }
+
+    &__nunero {
+        display: block;
+        margin-bottom: 15px;
+        color: $color-violeta;
+        font-size: 0.9rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    &__intro h2 {
+        margin: 0 0 25px;
+        color: $color-blanco;
+        font-size: clamp(2rem, 4vw, 3rem);
+        line-height: 1.1;
+        font-weight: 700;
+    }
+
+    &__intro p {
+        margin: 0;
+        color: rgba(255,255,255,0.75);
+        font-size: 1.05rem;
+        line-height: 1.7;
+    }
+
+    &__valores {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    &__item {
+        padding: 35px 30px;
+        border: 1px solid rgba(255,255,255,0.1);
+        border-radius: 8px;
+        transition: transform 0.3s ease, border-color 0.3s ease;
+
+        h3 {
+            margin: 0 0 15px;
+            color: $color-blanco;
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+
+        p {
+            margin: 0;
+            color: rgba(255,255,255,0.75);
+            line-height: 1.6;
+        }
+
+        &:hover {
+            transform: translateY(-6px);
+            border-color: $color-violeta;
+        }
+    }
+}
