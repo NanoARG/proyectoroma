@@ -80,7 +80,7 @@
         border-color: $color-violeta;
     }  
 }
-@media (min-width: 769px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
     
     .filosofia {
         
@@ -94,7 +94,7 @@
         grid-column: 1 / -1;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     .filosofia {
         padding: 60px 20px;

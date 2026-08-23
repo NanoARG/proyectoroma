@@ -39,3 +39,18 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .nosotros-cta {
+        padding: 70px 20px;
+
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        &__boton {
+            padding: 12px 24px;
+            font-size: 0.9rem;
+        }
+    }
+}

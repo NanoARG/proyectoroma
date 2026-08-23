@@ -147,7 +147,7 @@
         z-index: 1;
     }
 
-    @media (max-width: 991.98px) {
+    @media (max-width: 991px) {
         
         .navbar-collapse {
             width: 100%;
@@ -178,6 +178,17 @@
             color: $color-violeta;
         }
 
+        }
+    }
+}
+
+@media (max-width: 767px) {
+
+    .hero--interno {
+        min-height: 50vh;
+
+        .hero__content {
+            min-height: 50vh;
         }
     }
 }

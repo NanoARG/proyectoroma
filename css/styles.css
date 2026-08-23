@@ -118,7 +118,7 @@
   background: linear-gradient(to bottom, rgb(13, 13, 13) 0%, rgba(13, 13, 13, 0.6) 30%, rgba(13, 13, 13, 0) 60%);
   z-index: 1;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 991px) {
   .hero .navbar-collapse {
     width: 100%;
     background-color: rgba(13, 13, 13, 0.95);
@@ -145,6 +145,14 @@
   }
 }
 
+@media (max-width: 767px) {
+  .hero--interno {
+    min-height: 50vh;
+  }
+  .hero--interno .hero__content {
+    min-height: 50vh;
+  }
+}
 .filosofia {
   background-color: #0D0D0D;
   color: #FFFFFF;
@@ -211,7 +219,7 @@
   border-color: #9955C2;
 }
 
-@media (min-width: 769px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .filosofia__valores {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -220,7 +228,7 @@
     grid-column: 1/-1;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .filosofia {
     padding: 60px 20px;
   }
@@ -428,7 +436,7 @@
   font-size: 0.8rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .footer__contenido {
     flex-direction: column;
     gap: 40px;
@@ -496,6 +504,20 @@
   margin-top: 15px;
 }
 
+@media (max-width: 767px) {
+  .historia {
+    padding: 70px 20px;
+  }
+  .historia__imagen {
+    height: 350px;
+  }
+  .historia__texto {
+    margin-top: 30px;
+  }
+  .historia__texto p {
+    font-size: 1rem;
+  }
+}
 .entrenamiento {
   background-color: #2A1C33;
   color: #FFFFFF;
@@ -556,6 +578,28 @@
   border-color: #9955C2;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .entrenamiento__valores {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .entrenamiento__item:last-child {
+    grid-column: 1/-1;
+  }
+}
+@media (max-width: 767px) {
+  .entrenamiento {
+    padding: 70px 20px;
+  }
+  .entrenamiento__intro {
+    margin-bottom: 40px;
+  }
+  .entrenamiento__valores {
+    grid-template-columns: 1fr;
+  }
+  .entrenamiento__item:last-child {
+    grid-column: auto;
+  }
+}
 .nosotros-cta {
   background-color: #2A1C33;
   padding: 100px 20px;
@@ -588,6 +632,19 @@
 .nosotros-cta__boton:hover {
   background-color: #1F7F59;
   transform: translateY(-3px);
+}
+
+@media (max-width: 767px) {
+  .nosotros-cta {
+    padding: 70px 20px;
+  }
+  .nosotros-cta h2 {
+    margin-bottom: 30px;
+  }
+  .nosotros-cta__boton {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
