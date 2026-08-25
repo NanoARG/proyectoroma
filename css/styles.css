@@ -682,6 +682,7 @@
 
 .clases {
   background-color: #0D0D0D;
+  padding-bottom: 80px;
 }
 .clases__grid {
   max-width: 1300px;
@@ -750,21 +751,101 @@
   transform: translateY(0);
 }
 
+.como-entrenamos {
+  background-color: #2A1C33;
+  padding: 80px 20px 100px;
+}
+.como-entrenamos__intro {
+  max-width: 750px;
+  margin: 0 auto 70px;
+  text-align: center;
+}
+.como-entrenamos__numero {
+  display: block;
+  margin-bottom: 15px;
+  color: #9955C2;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.como-entrenamos h2 {
+  margin: 0 0 25px;
+  color: #FFFFFF;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.1;
+  font-weight: 700;
+}
+.como-entrenamos h2 span {
+  color: #9955C2;
+}
+.como-entrenamos__intro p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+.como-entrenamos__pasos {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.como-entrenamos__paso {
+  padding: 0 40px;
+  text-align: center;
+}
+.como-entrenamos__paso:not(:last-child) {
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+.como-entrenamos__paso h3 {
+  margin: 0 0 20px;
+  color: #FFFFFF;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+.como-entrenamos__paso p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.7;
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   .clases {
-    padding: 0 20px;
+    padding: 0 20px 80px;
   }
   .clases__grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .como-entrenamos__paso {
+    padding: 0 20px;
+  }
 }
 @media (max-width: 767px) {
   .clases {
-    padding: 0 20px;
+    padding: 0 20px 80px;
   }
   .clases__grid {
     grid-template-columns: 1fr;
     max-width: 400px;
+  }
+  .clase__overlay {
+    background-color: rgba(13, 13, 3, 0.65);
+  }
+  .clase__overlay p {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .como-entrenamos__pasos {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .como-entrenamos__paso {
+    padding: 0 10px;
+  }
+  .como-entrenamos__paso:not(:last-child) {
+    padding-bottom: 40px;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   }
 }
 

@@ -41,6 +41,7 @@
 
 .clases {
     background-color: $color-negro;
+    padding-bottom: 80px;
 
     &__grid {
         max-width: 1300px;
@@ -124,23 +125,123 @@
     }
 }
 
+.como-entrenamos {
+    background-color: $color-purpura-2;
+    padding: 80px 20px 100px;
+
+    &__intro {
+        max-width: 750px;
+        margin: 0 auto 70px ;
+        text-align: center;
+    }
+
+    &__numero {
+        display: block;
+        margin-bottom: 15px;
+        color: $color-violeta;
+        font-size: 0.9rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    h2 {
+        margin: 0 0 25px;
+        color: $color-blanco;
+        font-size: clamp(2rem, 4vw, 3rem);
+        line-height: 1.1;
+        font-weight: 700;
+
+        span {
+            color: $color-violeta;
+        }
+    }
+
+    &__intro p {
+        margin: 0;
+        color: rgba(255,255,255,0.75);
+        font-size: 1.05rem;
+        line-height: 1.7;
+    }
+
+    &__pasos {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__paso {
+        padding: 0 40px;
+        text-align: center;
+        &:not(:last-child) {
+            border-right: 1px solid rgba(255,255,255,0.15);
+        }
+
+        h3 {
+            margin: 0 0 20px;
+            color: $color-blanco;
+            font-size: 1.3rem;
+            letter-spacing: 1px;
+        }
+
+        p {
+            margin: 0;
+            color: rgba(255,255,255,0.75);
+            line-height: 1.7;
+        }
+    }
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
     .clases {
-        padding: 0 20px;
+        padding: 0 20px 80px;
 
         &__grid {
             grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .como-entrenamos {
+        &__paso {
+            padding: 0 20px;
         }
     }
 }
 
 @media (max-width: 767px) {
     .clases {
-        padding: 0 20px;
+        padding: 0 20px 80px;
 
         &__grid {
             grid-template-columns: 1fr;
             max-width: 400px;
+        }
+    }
+
+    .clase {
+        &__overlay {
+            background-color: rgba(13,13,3,0.65);
+
+            p {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+
+    .como-entrenamos {
+        &__pasos {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        &__paso {
+            padding: 0 10px;
+            &:not(:last-child) {
+                padding-bottom: 40px;
+                border-right: none;
+                border-bottom: 1px solid rgba(255,255,255,0.15);
+            }
         }
     }
 }
