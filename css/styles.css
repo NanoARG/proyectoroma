@@ -877,7 +877,7 @@
 }
 .planes-intro p {
   margin: 0;
-  color: rgba(255, 255, 255, 0.075);
+  color: rgba(255, 255, 255, 0.75);
   font-size: 1.05rem;
   line-height: 1.7;
 }
@@ -897,8 +897,15 @@
 .plan {
   padding: 40px 30px;
   background-color: #2A1C33;
+  border: 1px solid transparent;
   border-radius: 8px;
   text-align: center;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.plan:hover {
+  transform: translateY(-5px);
+  border-color: #9955C2;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
 }
 .plan__encabezado .plan__numero {
   display: block;
@@ -954,11 +961,11 @@
 
 .planes-info {
   background-color: #2A1C33;
-  padding: 80px 20px 100px;
+  padding: 80px 20px 80px;
 }
 .planes-info__contenido {
   max-width: 750px;
-  margin: 0 auto;
+  margin: 0 auto 60px;
   text-align: center;
 }
 .planes-info__numero {
@@ -979,11 +986,68 @@
 .planes-info h2 span {
   color: #9955C2;
 }
-.planes-info p {
+.planes-info__contenido > p {
   margin: 0;
-  color: rgba(255, 255, 255, 0.075);
+  color: rgba(255, 255, 255, 0.75);
   font-size: 1.05rem;
   line-height: 1.7;
+}
+.planes-info__opciones {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.planes-info__opcion {
+  padding: 0 30px;
+  text-align: center;
+}
+.planes-info__opcion:not(:last-child) {
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+.planes-info__opcion strong {
+  display: block;
+  color: #1F7F59;
+  font-size: 2.5rem;
+  line-height: 1;
+}
+.planes-info__opcion span {
+  display: block;
+  margin-top: 8px;
+  color: #FFFFFF;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.planes-info__opcion p {
+  margin: 10px 0 0;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .planes__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .planes .plan:last-child {
+    grid-column: 1/-1;
+    max-width: calc(50% - 12.5px);
+    width: 100%;
+    justify-self: center;
+  }
+}
+@media (max-width: 767px) {
+  .planes {
+    padding: 0 20px 80px;
+  }
+  .planes__grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+  .planes .plan:last-child {
+    grid-column: auto;
+    max-width: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

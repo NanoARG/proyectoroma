@@ -33,7 +33,7 @@
 
     p {
         margin: 0;
-        color: rgba(255,255,255,.075);
+        color: rgba(255,255,255,0.75);
         font-size: 1.05rem;
         line-height: 1.7;
     }
@@ -55,8 +55,21 @@
 .plan {
     padding: 40px 30px;
     background-color: $color-purpura-2;
+    border: 1px solid transparent;
     border-radius: 8px;
     text-align: center;
+
+    transition: 
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+    
+    &:hover {
+        transform: translateY(-5px);
+        border-color: $color-violeta;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+    }
+
 
     &__encabezado {
         .plan__numero {
@@ -125,11 +138,11 @@
 
 .planes-info {
     background-color: $color-purpura-2;
-    padding: 80px 20px 100px;
+    padding: 80px 20px 80px;
 
     &__contenido {
         max-width: 750px;
-        margin: 0 auto;
+        margin: 0 auto 60px;
         text-align: center;
     }
 
@@ -154,10 +167,77 @@
         }
     }
 
-    p {
+    &__contenido > p {
         margin: 0;
-        color: rgba(255,255,255,.075);
+        color: rgba(255,255,255,0.75);
         font-size: 1.05rem;
         line-height: 1.7;
+    }
+
+    &__opciones {
+        max-width: 900px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__opcion {
+        padding: 0 30px;
+        text-align: center;
+        &:not(:last-child) {
+            border-right: 1px solid rgba(255,255,255,0.15);
+        }
+
+        strong {
+            display: block;
+            color: $color-verde;
+            font-size: 2.5rem;
+            line-height: 1;
+        }
+
+        span {
+            display: block;
+            margin-top: 8px;
+            color: $color-blanco;
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        p {
+            margin: 10px 0 0;
+            color: rgba(255,255,255,0.65);
+            font-size: 0.9rem;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .planes {
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .plan:last-child {
+            grid-column: 1 / -1;
+            max-width: calc(50% - 12.5px);
+            width: 100%;
+            justify-self: center;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .planes {
+        padding: 0 20px 80px;
+        
+        &__grid {
+            grid-template-columns: 1fr;
+            max-width: 400px;
+        }
+
+        .plan:last-child {
+            grid-column: auto;
+            max-width: none;
+        }
     }
 }
