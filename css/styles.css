@@ -1048,6 +1048,22 @@
     grid-column: auto;
     max-width: none;
   }
+  .planes-info__opciones {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  .planes-info__opcion {
+    padding: 0 10px;
+  }
+  .planes-info__opcion:not(:last-child) {
+    padding-bottom: 35px;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  .planes-info__opcion p {
+    max-width: 250px;
+    margin: 10px auto 0;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
