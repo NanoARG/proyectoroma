@@ -64,14 +64,6 @@
         }
     }
 
-    &--interno {
-
-        min-height: 65vh;
-
-        .hero__content {
-            min-height: 65vh;
-        }
-    }
     .navbar {
         position: relative;
         z-index: 3;
@@ -145,6 +137,34 @@
             rgba(13,13,13,0) 60%
         );
         z-index: 1;
+    }
+
+&--interno {
+        position: relative;
+        min-height: 65vh;
+
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: rgba(13,13,13,0.65);
+            z-index: 1;
+        }
+
+        .hero__content {
+            min-height: 65vh;
+            position: relative;
+            z-index: 2;
+        }
+
+        .navbar {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero__image img {
+            object-position: center 55%;
+        }
     }
 
     @media (max-width: 991px) {

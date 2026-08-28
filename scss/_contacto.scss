@@ -1,0 +1,268 @@
+@use 'variables' as *;
+
+.contacto-intro {
+    background-color: $color-negro;
+    padding: 80px 20px;
+
+    &__contenido {
+        max-width: 750px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__numero {
+        display: block;
+        margin-bottom: 15px;
+        color: $color-violeta;
+        font-size: 0.9rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    h2 {
+        margin: 0 0 25px;
+        color: $color-blanco;
+        font-size: clamp(2rem, 4vw, 3rem);
+        line-height: 1.1;
+        font-weight: 700;
+
+        span {
+            color: $color-violeta;
+        }
+    }
+
+    p {
+        margin: 0;
+        color: rgba(255,255,255,0.75);
+        font-size: 1.05rem;
+        line-height: 1.7;
+    }
+}
+
+.contacto-ubicacion {
+    background-color: $color-negro;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    min-height: 450px;
+    padding: 0 40px 60px;
+    column-gap: 30px;
+
+    &__mapa {
+        height: 450px;
+
+        iframe {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__datos {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px;
+        background-color: $color-negro;
+    }
+
+    &__datos::before {
+        content: "";
+        position: absolute;
+        top: 20%;
+        height: 60%;
+        left: 0;
+        width: 1px;
+        background-color: rgba(153,85,194,0.35);
+    }
+
+
+    &__numero {
+        display: block;
+        margin-bottom: 15px;
+        color: $color-violeta;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    h3 {
+        margin: 0 0 25px;
+        color: $color-blanco;
+        font-size: clamp(1.8rem, 3vw, 2.5rem);
+        line-height: 1.1;
+    }
+
+    p {
+        margin: 0 0 30px;
+        color: rgba(255,255,255,0.75);
+        line-height: 1.7;
+    }
+
+    &__boton {
+        align-self: flex-start;
+        display: inline-block;
+        padding: 12px 24px;
+        background-color: $color-violeta;
+        color: $color-blanco;
+        text-decoration: none;
+        font-weight: 700;
+        border-radius: 5px;
+
+        transition: background-color 0.3s ease, transform 0.3s ease;
+
+        &:hover {
+            background-color: $color-verde;
+            transform: translateY(-3px);
+        }
+    }
+}
+
+.contacto-formulario {
+    background-color: $color-purpura-2;
+    padding: 60px 20px;
+
+    &__contenido {
+        max-width: 750px;
+        margin: 0 auto 60px;
+        text-align: center;
+    }
+
+    &__numero {
+        display: block;
+        margin-top: 15px;
+        color: $color-violeta;
+        font-size: 0.9rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    h2 {
+        margin: 0 0 25px;
+        color: $color-blanco;
+        font-size: clamp(2rem, 4vw, 3rem);
+        line-height: 1.1;
+
+        span {
+            color: $color-violeta;
+        }
+    }
+
+    p {
+        margin: 0;
+        color: rgba(255,255,255,0.75);
+        font-size: 1.05rem;
+        line-height: 1.7;
+    }
+}
+
+.contacto-form {
+    max-width: 750px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    &__campo {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        label {
+            color: $color-blanco;
+            font-size: 0.9rem;
+            font-weight: 700;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 14px 16px;
+            background-color: $color-negro;
+            color: $color-blanco;
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 5px;
+            font-family: inherit;
+            outline: none;
+
+            transition: border-color 0.3s ease;
+
+            &:focus {
+                border-color: $color-violeta;
+            }
+
+            &::placeholder {
+                color: rgba(255,255,255,0.4);
+            }
+        }
+
+        textarea {
+            resize: vertical;
+        }
+    }
+
+    &__boton {
+        align-self: center;
+        padding: 12px 28px;
+        background-color: $color-violeta;
+        color: $color-blanco;
+        border: none;
+        border-radius: 5px;
+        font-weight: 700;
+        cursor: pointer;
+
+        transition: background-color 0.3s ease, transform 0.3s ease;
+
+        &:hover {
+            background-color: $color-verde;
+            transform: translateY(-3px);
+        }
+    }
+}
+
+.cta--secundario {
+    background-color: $color-negro;
+
+    .cta__contenido {
+        max-width: 900px;
+        padding: 60px 30px;
+        background-color: $color-purpura-2;
+        border-radius: 8px;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .contacto-ubicacion {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contacto-ubicacion__mapa {
+        height: 350px;
+        min-height: 0;
+    }
+
+    .contacto-ubicacion__datos {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contacto-ubicacion {
+        grid-template-columns: 1fr;
+        padding: 0 20px 60px;
+        row-gap: 30px;
+    }
+
+    .contacto-ubicacion__mapa {
+        height: 280px;
+    }
+
+    .contacto-ubicacion__datos {
+        padding: 40px 20px;
+    }
+
+    .contacto-ubicacion__datos::before {
+        display: none;
+    }
+}
