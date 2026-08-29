@@ -15,12 +15,14 @@
     }
 
     h2 {
-            margin: 0 0 40px;
-            color: $color-blanco;
-            font-size: clamp(2rem, 4vw, 3rem);
-            line-height: 1.1;
-            font-weight: 700;
-        }
+        font-family: $fuente-titulos;
+        margin: 0 0 40px;
+        color: $color-blanco;
+        font-size: clamp(2rem, 4vw, 3rem);
+        line-height: 1.1;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
 
     &__imagen {
         width: 100%;
@@ -46,8 +48,8 @@
         p {
             margin: 0;
             color: rgba(255,255,255,075);
-            font-size: 1.05rem;
-            line-height: 1.7;
+            font-size: 1.6rem;
+            line-height: 1.6;
         }
         p+p {
             margin-top: 15px;

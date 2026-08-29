@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
 @font-face {
   font-family: "BeBas Neue";
   src: url("../assets/fonts/BebasNeue-Regular.ttf") format("truetype");
@@ -12,16 +16,16 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "Caviar Dreams";
-  src: url(../assets/fonts/CaviarDreams.ttf) format("truetype");
+  font-family: "Barlow Condensed";
+  src: url(../assets/fonts/BarlowCondensed-Regular.ttf) format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Caviar Dreams";
-  src: url(../assets/fonts/CaviarDreams_Bold.ttf) format("truetype");
-  font-weight: 700;
+  font-family: "Barlow Condensed";
+  src: url(../assets/fonts/BarlowCondensed-Medium.ttf) format("truetype");
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
@@ -57,12 +61,12 @@
   color: #FFFFFF;
 }
 .hero__content p {
-  font-family: "Caviar Dreams", sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   max-width: 600px;
   margin: 25px 0 30px;
   color: #FFFFFF;
-  font-size: 1.25rem;
-  font-weight: 500;
+  font-size: 1.4rem;
+  font-weight: 400;
   line-height: 1.5;
 }
 .hero__content .hero__boton {
@@ -71,7 +75,9 @@
   background-color: #9955C2;
   color: #FFFFFF;
   text-decoration: none;
+  font-size: 0.95rem;
   font-weight: 700;
+  letter-spacing: 0.5px;
   border-radius: 5px;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -84,13 +90,14 @@
   z-index: 3;
 }
 .hero .navbar .navbar-brand {
+  font-family: "Bebas Neue", sans-serif;
   color: #FFFFFF;
   text-decoration: none;
   display: flex;
   flex-direction: column;
   line-height: 0.9;
-  font-size: 1.8rem;
-  font-weight: 700;
+  font-size: 3rem;
+  font-weight: 500;
 }
 .hero .navbar .navbar-brand span {
   color: #FFFFFF;
@@ -108,8 +115,9 @@
   gap: 8px;
 }
 .hero .navbar .nav-link {
+  font-family: "Bebas Neue", sans-serif;
   color: #FFFFFF;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 500;
   padding: 8px 14px;
   transition: color 0.3s ease;
@@ -210,15 +218,16 @@
   line-height: 1.1;
   color: #FFFFFF;
   font-weight: 700;
+  letter-spacing: 2px;
 }
 .filosofia__intro h2 span {
   color: #9955C2;
 }
 .filosofia__intro p {
-  font-family: "Caviar Dreams", sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   margin: 0;
   color: rgba(255, 255, 255, 0.75);
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   line-height: 1.7;
 }
 .filosofia__intro p + p {
@@ -247,10 +256,10 @@
   margin-bottom: 20px;
 }
 .valor h3 {
+  font-family: "Bebas Neue", sans-serif;
   color: #FFFFFF;
   margin: 0 0 15px;
-  font-size: 1.4rem;
-  font-weight: 700;
+  font-size: 1.5rem;
 }
 .valor p {
   color: rgba(255, 255, 255, 0.75);
@@ -290,11 +299,13 @@
   text-align: center;
 }
 .galeria__intro h2 {
+  font-family: "Bebas Neue", sans-serif;
   margin: 0;
   color: #FFFFFF;
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.1;
   font-weight: 700;
+  letter-spacing: 2px;
 }
 .galeria__intro span {
   color: #9955C2;
@@ -337,7 +348,7 @@
 }
 .galeria__item .galeria__overlay span {
   color: #FFFFFF;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 2px;
   font-size: 0.9rem;
   text-transform: uppercase;
@@ -381,6 +392,9 @@
   .galeria__item .galeria__overlay {
     display: none;
   }
+  .galeria__item--pullups img {
+    object-position: 50% 0%;
+  }
 }
 .cta {
   background-color: #2A1C33;
@@ -392,11 +406,13 @@
   margin: 0 auto;
 }
 .cta__contenido h2 {
+  font-family: "Bebas Neue", sans-serif;
   margin: 0 0 30px;
   color: #FFFFFF;
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.1;
   font-weight: 700;
+  letter-spacing: 2px;
 }
 .cta__contenido h2::after {
   content: "";
@@ -409,8 +425,8 @@
 .cta__contenido p {
   margin: 0 0 30px;
   color: rgba(255, 255, 255, 0.75);
-  font-size: 1.1rem;
-  line-height: 1.6;
+  font-size: 1.2rem;
+  line-height: 1.7;
 }
 .cta__boton {
   display: inline-block;
@@ -455,12 +471,13 @@
   display: flex;
   flex-direction: column;
   width: fit-content;
+  font-family: "Bebas Neue", sans-serif;
   color: #FFFFFF;
   text-decoration: none;
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 0.9;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 .footer__logo span {
   color: #9955C2;
@@ -480,7 +497,7 @@
   margin: 0 0 20px;
   color: #FFFFFF;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 2px;
 }
 .footer__redes ul {
@@ -537,11 +554,13 @@
   text-align: center;
 }
 .historia h2 {
+  font-family: "Bebas Neue", sans-serif;
   margin: 0 0 40px;
   color: #FFFFFF;
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.1;
   font-weight: 700;
+  letter-spacing: 2px;
 }
 .historia__imagen {
   width: 100%;
@@ -563,8 +582,8 @@
 .historia__texto p {
   margin: 0;
   color: rgb(255, 255, 255);
-  font-size: 1.05rem;
-  line-height: 1.7;
+  font-size: 1.6rem;
+  line-height: 1.6;
 }
 .historia__texto p + p {
   margin-top: 15px;
@@ -595,17 +614,19 @@
   text-align: center;
 }
 .entrenamiento__intro h2 {
+  font-family: "Bebas Neue", sans-serif;
   margin: 0 0 25px;
   color: #FFFFFF;
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.1;
   font-weight: 700;
+  letter-spacing: 2px;
 }
 .entrenamiento__intro p {
   margin: 0;
   color: rgba(255, 255, 255, 0.75);
-  font-size: 1.05rem;
-  line-height: 1.7;
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 .entrenamiento__valores {
   max-width: 1100px;
@@ -621,10 +642,10 @@
   transition: transform 0.3s ease, border-color 0.3s ease;
 }
 .entrenamiento__item h3 {
+  font-family: "Bebas Neue", sans-serif;
   margin: 0 0 15px;
   color: #FFFFFF;
-  font-size: 1.3rem;
-  font-weight: 700;
+  font-size: 1.5rem;
 }
 .entrenamiento__item p {
   margin: 0;
@@ -668,11 +689,13 @@
   text-align: center;
 }
 .clases-intro h2 {
+  font-family: "Bebas Neue", sans-serif;
   margin: 0 0 25px;
   color: #FFFFFF;
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.1;
   font-weight: 700;
+  letter-spacing: 2px;
 }
 .clases-intro h2 span {
   color: #9955C2;
@@ -680,7 +703,7 @@
 .clases-intro p {
   margin: 0;
   color: rgba(255, 255, 255, 0.75);
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   line-height: 1.7;
 }
 
@@ -723,9 +746,10 @@
   transition: background-color 0.4s ease;
 }
 .clase__overlay h3 {
+  font-family: "Bebas Neue", sans-serif;
   margin: 0;
   color: #FFFFFF;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   letter-spacing: 2px;
 }
 .clase__overlay p {
@@ -758,11 +782,13 @@
   text-align: center;
 }
 .como-entrenamos h2 {
+  font-family: "Bebas Neue", sans-serif;
   margin: 0 0 25px;
   color: #FFFFFF;
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.1;
   font-weight: 700;
+  letter-spacing: 2px;
 }
 .como-entrenamos h2 span {
   color: #9955C2;
@@ -770,7 +796,7 @@
 .como-entrenamos__intro p {
   margin: 0;
   color: rgba(255, 255, 255, 0.75);
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   line-height: 1.7;
 }
 .como-entrenamos__pasos {
@@ -847,11 +873,13 @@
   text-align: center;
 }
 .planes-intro h2 {
+  font-family: "Bebas Neue", sans-serif;
   margin: 0 0 25px;
   color: #FFFFFF;
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.1;
   font-weight: 700;
+  letter-spacing: 2px;
 }
 .planes-intro h2 span {
   color: #9955C2;
@@ -859,8 +887,8 @@
 .planes-intro p {
   margin: 0;
   color: rgba(255, 255, 255, 0.75);
-  font-size: 1.05rem;
-  line-height: 1.7;
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 
 .planes {
@@ -889,6 +917,7 @@
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
 }
 .plan__encabezado h3 {
+  font-family: "Bebas Neue", sans-serif;
   margin: 0 0 10px;
   color: #FFFFFF;
   font-size: 1.6rem;
@@ -942,11 +971,13 @@
   text-align: center;
 }
 .planes-info h2 {
+  font-family: "Bebas Neue", sans-serif;
   margin: 0 0 25px;
   color: #FFFFFF;
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.1;
   font-weight: 700;
+  letter-spacing: 2px;
 }
 .planes-info h2 span {
   color: #9955C2;
@@ -954,8 +985,8 @@
 .planes-info__contenido > p {
   margin: 0;
   color: rgba(255, 255, 255, 0.75);
-  font-size: 1.05rem;
-  line-height: 1.7;
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 .planes-info__opciones {
   max-width: 900px;
@@ -981,7 +1012,7 @@
   margin-top: 8px;
   color: #FFFFFF;
   font-size: 0.9rem;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 1px;
 }
 .planes-info__opcion p {
@@ -1040,11 +1071,13 @@
   text-align: center;
 }
 .contacto-intro h2 {
+  font-family: "Bebas Neue", sans-serif;
   margin: 0 0 25px;
   color: #FFFFFF;
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.1;
   font-weight: 700;
+  letter-spacing: 2px;
 }
 .contacto-intro h2 span {
   color: #9955C2;
@@ -1052,8 +1085,8 @@
 .contacto-intro p {
   margin: 0;
   color: rgba(255, 255, 255, 0.75);
-  font-size: 1.05rem;
-  line-height: 1.7;
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 
 .contacto-ubicacion {
@@ -1090,14 +1123,16 @@
   background-color: rgba(153, 85, 194, 0.35);
 }
 .contacto-ubicacion__nombre {
+  font-family: "Bebas Neue", sans-serif;
   display: block;
   margin-bottom: 15px;
   color: #9955C2;
-  font-size: 0.8rem;
+  font-size: 1.05rem;
   font-weight: 700;
   letter-spacing: 2px;
 }
 .contacto-ubicacion h3 {
+  font-family: "Bebas Neue", sans-serif;
   margin: 0 0 25px;
   color: #FFFFFF;
   font-size: clamp(1.8rem, 3vw, 2.5rem);
@@ -1106,7 +1141,8 @@
 .contacto-ubicacion p {
   margin: 0 0 30px;
   color: rgba(255, 255, 255, 0.75);
-  line-height: 1.7;
+  font-size: 1.05rem;
+  line-height: 1.6;
 }
 .contacto-ubicacion__boton {
   align-self: flex-start;
@@ -1114,8 +1150,10 @@
   padding: 12px 24px;
   background-color: #9955C2;
   color: #FFFFFF;
+  font-size: 0.95rem;
   text-decoration: none;
   font-weight: 700;
+  letter-spacing: 0.5px;
   border-radius: 5px;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -1134,10 +1172,13 @@
   text-align: center;
 }
 .contacto-formulario h2 {
+  font-family: "Bebas Neue", sans-serif;
   margin: 0 0 25px;
   color: #FFFFFF;
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 .contacto-formulario h2 span {
   color: #9955C2;
@@ -1145,8 +1186,8 @@
 .contacto-formulario p {
   margin: 0;
   color: rgba(255, 255, 255, 0.75);
-  font-size: 1.05rem;
-  line-height: 1.7;
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 
 .contacto-form {
@@ -1164,7 +1205,8 @@
 .contacto-form__campo label {
   color: #FFFFFF;
   font-size: 0.9rem;
-  font-weight: 700;
+  font-weight: 500;
+  letter-spacing: 2px;
 }
 .contacto-form__campo input,
 .contacto-form__campo textarea {
@@ -1174,7 +1216,6 @@
   color: #FFFFFF;
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 5px;
-  font-family: inherit;
   outline: none;
   transition: border-color 0.3s ease;
 }
@@ -1194,6 +1235,8 @@
   padding: 12px 28px;
   background-color: #9955C2;
   color: #FFFFFF;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
   border: none;
   border-radius: 5px;
   font-weight: 700;

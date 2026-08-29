@@ -17,6 +17,7 @@
             line-height: 1.1;
             color: $color-blanco;
             font-weight: 700;
+            letter-spacing: 2px;
 
             span {
             color: $color-violeta;
@@ -28,7 +29,8 @@
             font-family: $fuente-textos;
             margin: 0;
             color: rgba(255,255,255,0.75);
-            font-size: 1.05rem;
+            font-size: 1.2rem;
+            
             line-height: 1.7;
         }
 
@@ -66,10 +68,10 @@
     }
 
     h3 {
+        font-family: $fuente-titulos;
         color: $color-blanco;
         margin: 0 0 15px;
-        font-size: 1.4rem;
-        font-weight: 700;
+        font-size: 1.5rem;
     }
 
     p {

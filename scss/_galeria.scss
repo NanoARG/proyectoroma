@@ -14,11 +14,13 @@
         text-align: center;
 
         h2 {
+            font-family: $fuente-titulos;
             margin: 0;
             color: $color-blanco;
             font-size: clamp(2rem, 4vw, 3rem);
             line-height: 1.1;
             font-weight: 700;
+            letter-spacing: 2px;
         }
 
         span {
@@ -83,7 +85,7 @@
 
         span {
             color: $color-blanco;
-            font-weight: 700;
+            font-weight: 500;
             letter-spacing: 2px;
             font-size: 0.9rem;
             text-transform: uppercase;
@@ -144,4 +146,9 @@
             display: none;    
         }
     }
+
+    .galeria__item--pullups img {
+            object-position: 50% 0%;
+        }
+
 }

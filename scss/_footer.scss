@@ -17,12 +17,13 @@
         display: flex;
         flex-direction: column;
         width: fit-content;
+        font-family: $fuente-titulos;
         color: $color-blanco;
         text-decoration: none;
         font-size: 1.6rem;
         font-weight: 700;
         line-height: 0.9;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
 
         span {
             color: $color-violeta;
@@ -50,7 +51,7 @@
             margin: 0 0 20px;
             color: $color-blanco;
             font-size: 1rem;
-            font-weight: 700;
+            font-weight: 500;
             letter-spacing: 2px;
         }
 
