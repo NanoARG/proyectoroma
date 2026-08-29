@@ -30,6 +30,7 @@
         text-align: center;
 
         h1 {
+            font-family: $fuente-titulos;
             font-size: clamp(3rem, 7vw, 7rem);
             line-height: 0.95;
             margin: 0;
@@ -37,6 +38,7 @@
         }
 
         p {
+            font-family: $fuente-textos;
             max-width: 600px;
             margin: 25px 0 30px;
 
@@ -134,7 +136,7 @@
             to bottom,
             rgba(13,13,13,1) 0%,
             rgba(13,13,13,0.60) 30%,
-            rgba(13,13,13,0) 60%
+            rgba(13,13,13,1) 90%
         );
         z-index: 1;
     }

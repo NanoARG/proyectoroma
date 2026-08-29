@@ -2,21 +2,12 @@
 
 .clases-intro {
     background-color: $color-negro;
-    padding: 100px 20px;
+    padding: 80px 20px;
 
     &__contenido {
         max-width: 750px;
         margin: 0 auto;
         text-align: center;
-    }
-
-    &__numero {
-        display: block;
-        margin-bottom: 15px;
-        color: $color-violeta;
-        font-size: 0.9rem;
-        font-weight: 700;
-        letter-spacing: 2px;
     }
 
     h2 {
@@ -83,14 +74,6 @@
             );
         transition: background-color 0.4s ease;
 
-        span {
-            margin-bottom: 8px;
-            color: $color-violeta;
-            font-size: 0.8rem;
-            font-weight: 700;
-            letter-spacing: 2px;
-        }
-
         h3 {
             margin: 0;
             color: $color-blanco;
@@ -133,15 +116,6 @@
         max-width: 750px;
         margin: 0 auto 70px ;
         text-align: center;
-    }
-
-    &__numero {
-        display: block;
-        margin-bottom: 15px;
-        color: $color-violeta;
-        font-size: 0.9rem;
-        font-weight: 700;
-        letter-spacing: 2px;
     }
 
     h2 {

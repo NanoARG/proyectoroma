@@ -10,15 +10,6 @@
         text-align: center;
     }
 
-    &__numero {
-        display: block;
-        margin-bottom: 15px;
-        color: $color-violeta;
-        font-size: 0.9rem;
-        font-weight: 700;
-        letter-spacing: 2px;
-    }
-
     h2 {
         margin: 0 0 25px;
         color: $color-blanco;
@@ -77,7 +68,7 @@
     }
 
 
-    &__numero {
+    &__nombre {
         display: block;
         margin-bottom: 15px;
         color: $color-violeta;
@@ -126,15 +117,6 @@
         max-width: 750px;
         margin: 0 auto 60px;
         text-align: center;
-    }
-
-    &__numero {
-        display: block;
-        margin-top: 15px;
-        color: $color-violeta;
-        font-size: 0.9rem;
-        font-weight: 700;
-        letter-spacing: 2px;
     }
 
     h2 {
@@ -218,18 +200,6 @@
             transform: translateY(-3px);
         }
     }
-}
-
-.cta--secundario {
-    background-color: $color-negro;
-
-    .cta__contenido {
-        max-width: 900px;
-        padding: 60px 30px;
-        background-color: $color-purpura-2;
-        border-radius: 8px;
-    }
-    
 }
 
 @media (min-width: 768px) and (max-width: 991px) {

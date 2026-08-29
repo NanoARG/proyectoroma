@@ -54,14 +54,14 @@
             srcset="./assets/imagenes/hero-mobile.webp"
             >
             <img
-                src="/assets/imagenes/hero-desktop.webp"
+                src="/assets/imagenes/hero-nuevo.jpg"
                 alt="Atleta entrenando en Roma Fitness"
             >
         </picture>
         <div class="hero__content">
             <h1>SUPERÁ TUS LÍMITES</h1>
             <p>Entrená. Evolucioná. Sé parte de Roma.</p>
-            <a href="#" class="hero__boton">EMPEZÁ AHORA</a>
+            <a href="./pages/contacto.html" class="hero__boton">EMPEZÁ AHORA</a>
         </div>
     </header>
 
@@ -109,11 +109,17 @@
             </div>
             <div class="galeria__grid">
                 <article class="galeria__item galeria__item--kettlebell">
-                    <img 
-                        src="./assets/imagenes/bloque3_1.webp"
-                        alt="Atleta realizando un ejercicio con kettlebells en Roma Fitness"
-                        loading="lazy"
-                    >
+                    <picture class="hero__image">
+                        <source
+                            media="(max-width: 767px)"
+                            srcset="./assets/imagenes/bloque3_1mobile.webp"
+                        >
+                        <img
+                            src="./assets/imagenes/bloque3_1.webp"
+                            alt="Atleta entrenando en Roma Fitness"
+                            loading="lazy"
+                            >
+                    </picture>
                     <div class="galeria__overlay">
                         <span>KETTLEBELLS</span>
                     </div>
@@ -157,7 +163,7 @@
                 <p>
                     Tu próximo entrenamiento empieza hoy.
                 </p>
-                <a href="#" class="cta__boton">
+                <a href="./pages/contacto.html" class="cta__boton">
                     CONTACTANOS
                 </a>
             </div>

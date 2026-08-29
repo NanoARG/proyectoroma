@@ -54,3 +54,15 @@
 
         }
 }
+
+.cta--secundario {
+    background-color: $color-negro;
+
+    .cta__contenido {
+        max-width: 900px;
+        padding: 60px 30px;
+        background-color: $color-purpura-2;
+        border-radius: 8px;
+    }
+    
+}

@@ -10,15 +10,6 @@
         text-align: center;
     }
 
-    &__numero {
-        display: block;
-        margin-bottom: 15px;
-        color: $color-violeta;
-        font-size: 0.9rem;
-        font-weight: 700;
-        letter-spacing: 2px;
-    }
-
     h2 {
         margin: 0 0 25px;
         color: $color-blanco;
@@ -72,14 +63,6 @@
 
 
     &__encabezado {
-        .plan__numero {
-            display: block;
-            margin-bottom: 15px;
-            color: $color-violeta;
-            font-size: 0.8rem;
-            font-weight: 700;
-            letter-spacing: 2px;
-        }
 
         h3 {
             margin: 0 0 10px;
@@ -144,15 +127,6 @@
         max-width: 750px;
         margin: 0 auto 60px;
         text-align: center;
-    }
-
-    &__numero {
-        display: block;
-        margin-bottom: 15px;
-        color: $color-violeta;
-        font-size: 0.9rem;
-        font-weight: 700;
-        letter-spacing: 2px;
     }
 
     h2 {

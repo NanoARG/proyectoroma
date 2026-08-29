@@ -3,7 +3,7 @@
 .historia {
     background-color: $color-negro;
     color: $color-blanco;
-    padding: 100px 20px;
+    padding: 80px 20px;
 
     &__contenido {
         max-width: 1100px;
@@ -12,15 +12,6 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-    }
-
-    &__numero {
-        display: block;
-        margin-bottom: 15px;
-        color: $color-violeta;
-        font-size: 0.9rem;
-        font-weight: 700;
-        letter-spacing: 2px;
     }
 
     h2 {

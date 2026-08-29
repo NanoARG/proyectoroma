@@ -52,6 +52,12 @@
 
     //IMAGEN
 
+    picture {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
     img {
         width: 100%;
         height: 100%;
@@ -85,20 +91,6 @@
 
     }
 
-    //HOVER
-
-    &:hover {
-        
-        img {
-            transform: scale(1.04);
-        }
-
-        .galeria__overlay {
-            opacity: 1;
-        }
-    }
-
-
 //--------
 //POSICION IMAGENES
 //--------
@@ -124,4 +116,32 @@
     }
 }
 
+@media (hover: hover) and (min-width: 767px) {
+    .galeria__item:hover {
+        img {
+            transform: scale(1.04);
+        }
 
+        .galeria__overlay {
+            opacity: 1;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .galeria__grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 15px;
+    }
+
+    .galeria__item {
+        grid-column: auto;
+        grid-row: auto;
+        height: 220px;
+
+        .galeria__overlay {
+            display: none;    
+        }
+    }
+}
