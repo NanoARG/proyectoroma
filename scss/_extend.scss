@@ -1,0 +1,10 @@
+@use 'variables' as *;
+
+%titulo-seccion {
+    font-family: $fuente-titulos;
+    color: $color-blanco;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: 2px;
+}

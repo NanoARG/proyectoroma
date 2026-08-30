@@ -1,4 +1,5 @@
 @use 'variables' as *;
+@use 'mixins' as *;
 
 .hero {
     position: relative;
@@ -50,21 +51,7 @@
         }
 
         .hero__boton {
-            display: inline-block;
-            padding: 14px 32px;
-            background-color: $color-violeta;
-            color: $color-blanco;
-            text-decoration: none;
-            font-size: 0.95rem;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-
-            &:hover {
-                background-color: $color-verde;
-                transform: translateY(-3px);
-            }
+            @include boton-principal;
         }
     }
 
@@ -80,7 +67,7 @@
             flex-direction: column;
             line-height: 0.9;
             font-size: 3rem;
-            font-weight: 500;
+            font-weight: 400;
 
             span {
                 color: $color-blanco;
@@ -106,7 +93,7 @@
             font-family: $fuente-titulos;
             color: $color-blanco;
             font-size: 1.5rem;
-            font-weight: 500;
+            font-weight: 400;
             padding: 8px 14px;
             transition: color 0.3s ease;
 
@@ -200,7 +187,7 @@
                 transform: translateX(4px);
             }
 
-        .nav-link.active {
+        .active {
             color: $color-violeta;
         }
 

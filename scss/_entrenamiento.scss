@@ -1,4 +1,5 @@
 @use 'variables' as *;
+@use 'extend' as *;
 
 .entrenamiento {
 
@@ -11,25 +12,20 @@
         max-width: 750px;
         margin: 0 auto 60px;
         text-align: center;
-    }
 
-    &__intro h2 {
-        font-family: $fuente-titulos;
-        margin: 0 0 25px;
-        color: $color-blanco;
-        font-size: clamp(2rem, 4vw, 3rem);
-        line-height: 1.1;
-        font-weight: 700;
-        letter-spacing: 2px;
-    }
+         h2 {
+            @extend %titulo-seccion;
+            margin: 0 0 25px;
+        }
 
-    &__intro p {
-        margin: 0;
-        color: rgba(255,255,255,0.75);
-        font-size: 1.2rem;
-        line-height: 1.6;
+         p {
+            margin: 0;
+            color: rgba(255,255,255,0.75);
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
     }
-
+        
     &__valores {
         max-width: 1100px;
         margin: 0 auto;

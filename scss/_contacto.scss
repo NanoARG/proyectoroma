@@ -1,4 +1,6 @@
 @use 'variables' as *;
+@use 'mixins' as *;
+@use 'extend' as *;
 
 .contacto-intro {
     background-color: $color-negro;
@@ -11,13 +13,8 @@
     }
 
     h2 {
-        font-family: $fuente-titulos;
+        @extend %titulo-seccion;
         margin: 0 0 25px;
-        color: $color-blanco;
-        font-size: clamp(2rem, 4vw, 3rem);
-        line-height: 1.1;
-        font-weight: 700;
-        letter-spacing: 2px;
 
         span {
             color: $color-violeta;
@@ -76,7 +73,7 @@
         margin-bottom: 15px;
         color: $color-violeta;
         font-size: 1.05rem;
-        font-weight: 700;
+        font-weight: 400;
         letter-spacing: 2px;
     }
 
@@ -96,23 +93,8 @@
     }
 
     &__boton {
-        align-self: flex-start;
-        display: inline-block;
-        padding: 12px 24px;
-        background-color: $color-violeta;
-        color: $color-blanco;
-        font-size: 0.95rem;
-        text-decoration: none;
-        font-weight: 700;
-        letter-spacing: 0.5px;
-        border-radius: 5px;
-
-        transition: background-color 0.3s ease, transform 0.3s ease;
-
-        &:hover {
-            background-color: $color-verde;
-            transform: translateY(-3px);
-        }
+        @include boton-principal;
+        align-self: flex-start;  
     }
 }
 
@@ -127,13 +109,8 @@
     }
 
     h2 {
-        font-family: $fuente-titulos;
+        @extend %titulo-seccion;
         margin: 0 0 25px;
-        color: $color-blanco;
-        font-size: clamp(2rem, 4vw, 3rem);
-        line-height: 1.1;
-        font-weight: 700;
-        letter-spacing: 2px;
 
         span {
             color: $color-violeta;
@@ -194,23 +171,10 @@
     }
 
     &__boton {
+        @include boton-principal;
         align-self: center;
-        padding: 12px 28px;
-        background-color: $color-violeta;
-        color: $color-blanco;
-        font-size: 0.95rem;
-        letter-spacing: 0.5px;
         border: none;
-        border-radius: 5px;
-        font-weight: 700;
         cursor: pointer;
-
-        transition: background-color 0.3s ease, transform 0.3s ease;
-
-        &:hover {
-            background-color: $color-verde;
-            transform: translateY(-3px);
-        }
     }
 }
 
