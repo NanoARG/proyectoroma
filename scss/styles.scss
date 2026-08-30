@@ -1,8 +1,10 @@
+@use 'reset' as *;
+@use 'tipografias' as *;
 @use 'variables' as *;
 @use 'mixins' as *;
 @use 'extend' as *;
-@use 'reset' as *;
-@use 'tipografias' as *;
+
+
 @use 'header' as *;
 @use 'filosofia' as *;
 @use 'galeria' as *;
