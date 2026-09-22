@@ -1,0 +1,48 @@
+@use 'variables' as *;
+
+.impacto {
+    position: relative;
+    min-height: 55vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background-color: $color-negro;
+
+    &__contenido {
+        position: relative;
+        z-index: 2;
+
+        width: 100%;
+        max-width: 1100px;
+
+        padding: 80px 20px;
+
+        text-align: center;
+
+        h2 {
+            margin: 0;
+
+            font-family: $fuente-titulos;
+            font-size: clamp(3rem, 7vw, 6rem);
+            line-height: 0.9;
+
+            color: $color-blanco;
+        }
+
+        p {
+            margin: 20px auto 0;
+
+            max-width: 600px;
+
+            font-family: $fuente-textos;
+            font-size: 1.3rem;
+            line-height: 1.4;
+
+            color: rgba(255, 255, 255, 0.8);
+        }
+    }
+}

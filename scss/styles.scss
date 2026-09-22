@@ -5,14 +5,10 @@
 @use 'extend' as *;
 
 
-@use 'header' as *;
+@use 'hero' as *;
 @use 'presentacion' as *;
-@use 'filosofia' as *;
-@use 'galeria' as *;
-@use 'cta' as *;
-@use 'footer' as *;
-@use 'historia' as *;
-@use 'entrenamiento' as *;
+@use 'impacto' as *;
 @use 'clases' as *;
 @use 'planes' as *;
-@use 'contacto' as *;
+@use 'cta' as *;
+@use 'footer' as *;

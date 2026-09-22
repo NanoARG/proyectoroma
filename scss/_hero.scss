@@ -1,0 +1,87 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+
+    &__image {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+
+        background: linear-gradient(
+            to bottom,
+            rgba(13, 13, 13, 0.75) 0%,
+            rgba(13, 13, 13, 0.25) 45%,
+            rgba(13, 13, 13, 0.85) 100%
+        );
+    }
+
+    .navbar {
+        position: relative;
+        z-index: 3;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 2;
+
+        min-height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+        padding: 120px 20px 60px;
+
+        h1 {
+            margin: 0;
+
+            font-family: $fuente-titulos;
+            font-size: clamp(3.5rem, 8vw, 7rem);
+            line-height: 0.9;
+            letter-spacing: 1px;
+
+            color: $color-blanco;
+
+            span {
+                display: block;
+
+                &:nth-child(2){
+                color: $color-violeta;
+                }
+            }
+        }
+
+        p {
+            margin: 25px 0 30px;
+
+            font-family: $fuente-textos;
+            font-size: clamp(1.2rem, 2vw, 1.5rem);
+            line-height: 1.4;
+
+            color: $color-blanco;
+        }
+
+        .hero__boton {
+            @include boton-principal;
+        }
+    }
+}
