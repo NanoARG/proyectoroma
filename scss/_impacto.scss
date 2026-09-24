@@ -2,7 +2,7 @@
 
 .impacto {
     position: relative;
-    min-height: 520px;
+    min-height: 400px;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -19,8 +19,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: center;
-            transform: scale(0.85);
+            object-position: center 38%;
         }
     }
 
@@ -54,7 +53,7 @@
             margin: 0;
             font-family: $fuente-titulos;
             font-size: clamp(4rem, 8vw, 7rem);
-            line-height: 0.85;
+            line-height: 0.95;
             letter-spacing: 1px;
             color: $color-blanco;
 
@@ -68,8 +67,10 @@
     }
 
     @media (max-width: 767px) {
-        min-height: 460px;
-
+        min-height: 200px;
+        display: flex;
+        align-items: end;
+        
         &::after {
             background: linear-gradient(
                 180deg,
@@ -78,13 +79,20 @@
             );
         }
 
+        &__imagen {
+            img {
+                object-fit: cover;
+                object-position: center 45%;
+            }
+        }
+
         &__contenido {
-            padding: 70px 20px;
+            padding: 20px 20px;        
         }
 
         &__texto {
             h2 {
-                font-size: clamp(3.5rem, 17vw, 5.5rem);
+                font-size: clamp(1.5rem, 5vw, 5.5rem);
             }
         }
     }

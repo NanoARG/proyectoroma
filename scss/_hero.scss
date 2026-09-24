@@ -45,6 +45,90 @@
     .navbar {
         position: relative;
         z-index: 3;
+        padding: 25px 20px;
+        
+        .container-fluir {
+            padding: 0;
+        }
+
+        .navbar-brand {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            font-family: $fuente-titulos;
+            font-size: 2.7rem;
+            line-height: 0.75;
+            font-weight: 400;
+            color: $color-blanco;
+            text-decoration: none;
+
+            span {
+                color: $color-blanco;
+                letter-spacing: 1px;
+            }
+
+            small {
+                margin-top: 5px;
+                font-family: $fuente-textos;
+                font-size: 1rem;
+                font-weight: 600;
+                letter-spacing: 3px;
+                color: $color-violeta;
+            }
+        }
+
+        .navbar-nav {
+            gap: 18px;
+        }
+
+        .nav-link {
+            position: relative;
+            padding: 8px 4px;
+            font-family: $fuente-titulos;
+            font-size: 1.2rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.85);
+            transition: color 0.3s ease;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 0;
+                height: 2px;
+                background-color: $color-violeta;
+                transition: width 0.3s ease;
+            }
+
+            &:hover {
+                color: $color-blanco;
+                &::after {
+                    width: 100%;
+                }
+            }
+
+            &.active {
+                color: $color-violeta;
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+
+        .navbar-toggler {
+            border: 1px solid $color-violeta;
+            padding: 7px;
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+        .navbar-toggler-icon {
+            filter: brightness(0) invert(1);
+        }
     }
 
     &__content {
@@ -59,7 +143,7 @@
         align-items: flex-start;
 
         text-align: left;
-        padding: 80px 60px 70px;
+        padding: 80px 60px 120px;
 
         h1 {
             display: flex;
@@ -94,6 +178,66 @@
 
         .hero__boton {
             @include boton-principal;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .hero {
+            min-height: 100svh;
+
+            .navbar {
+                padding: 18px 20px;
+
+                .navbar-brand {
+                    font-size: 2.2rem;
+
+                    small {
+                        font-size: 0.35rem;
+                        letter-spacing: 2px;
+                    }
+                }
+
+                .navbar-toggler {
+                    padding: 6px;
+                }
+
+                .navbar-collapse {
+                    margin-top: 15px;
+                    padding: 10px 0;
+                    background-color: rgba(13,13,13,0.94);
+                }
+
+                .navbar-nav {
+                    gap: 0;
+                }
+
+                .nav-link {
+                    width: 100%;
+                    padding: 12px 20px;
+                    text-align: center;
+                    font-size: 1.1rem;
+                }
+            }
+
+            &__content {
+                min-height: 100svh;
+                padding: 40px 20px 65px;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+
+                h1 {
+                    align-items: center;
+                    font-size: clamp(3.8rem, 17vw, 5.5rem);
+                    line-height: 0.95;
+                }
+
+                p {
+                    max-width: 330px;
+                    margin: 25px 0;
+                    font-size: 1.15rem;
+                }
+            }
         }
     }
 }
