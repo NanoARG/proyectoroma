@@ -29,7 +29,7 @@ body {
   font-style: normal;
   font-display: swap;
 }
-.cta__contenido h2, .planes-intro h2, .planes-info h2, .clases-intro h2, .como-entrenamos h2, .clases__intro h2 {
+.cta__contenido h2, .planes-intro h2, .planes-info h2 {
   font-family: "Bebas Neue", sans-serif;
   color: #FFFFFF;
   font-size: clamp(2rem, 4vw, 3rem);
@@ -481,339 +481,70 @@ body {
   }
 }
 
-.clases-intro {
-  background-color: #0D0D0D;
-  padding: 80px 20px;
-}
-.clases-intro__contenido {
-  max-width: 750px;
-  margin: 0 auto;
-  text-align: center;
-}
-.clases-intro h2 {
-  margin: 0 0 25px;
-}
-.clases-intro h2 span {
-  color: #9955C2;
-}
-.clases-intro p {
-  margin: 0;
-  color: rgba(255, 255, 255, 0.75);
-  font-size: 1.2rem;
-  line-height: 1.7;
-}
-
 .clases {
   background-color: #0D0D0D;
-  padding-bottom: 80px;
-}
-.clases__grid {
-  max-width: 1300px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
-}
-
-.clase {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 3/4;
-  overflow: hidden;
-  border-radius: 8px;
-}
-.clase img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.5s ease;
-}
-.clase__overlay {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 25px;
-  text-align: center;
-  background: linear-gradient(to top, rgba(13, 13, 13, 0.9), rgba(13, 13, 13, 0));
-  transition: background-color 0.4s ease;
-}
-.clase__overlay h3 {
-  font-family: "Bebas Neue", sans-serif;
-  margin: 0;
   color: #FFFFFF;
-  font-size: 1.4rem;
-  letter-spacing: 2px;
+  padding: 100px 20px;
 }
-.clase__overlay p {
-  max-width: 450px;
-  margin: 15px 0 0;
-  color: rgba(255, 255, 255, 0.75);
-  line-height: 1.6;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.4s ease, transform 0.4s ease;
-}
-.clase:hover img {
-  transform: scale(1.05);
-}
-.clase:hover .clase__overlay {
-  background-color: rgba(13, 13, 13, 0.7);
-}
-.clase:hover .clase__overlay p {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.como-entrenamos {
-  background-color: #2A1C33;
-  padding: 80px 20px 100px;
-}
-.como-entrenamos__intro {
-  max-width: 750px;
-  margin: 0 auto 70px;
-  text-align: center;
-}
-.como-entrenamos h2 {
-  margin: 0 0 25px;
-}
-.como-entrenamos h2 span {
-  color: #9955C2;
-}
-.como-entrenamos__intro p {
-  margin: 0;
-  color: rgba(255, 255, 255, 0.75);
-  font-size: 1.2rem;
-  line-height: 1.7;
-}
-.como-entrenamos__pasos {
+.clases__contenido {
+  width: 100%;
   max-width: 1100px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-.como-entrenamos__paso {
-  padding: 0 40px;
-  text-align: center;
-}
-.como-entrenamos__paso:not(:last-child) {
-  border-right: 1px solid rgba(255, 255, 255, 0.15);
-}
-.como-entrenamos__paso h3 {
-  margin: 0 0 20px;
-  color: #FFFFFF;
-  font-size: 1.3rem;
-  letter-spacing: 1px;
-}
-.como-entrenamos__paso p {
-  margin: 0;
-  color: rgba(255, 255, 255, 0.75);
-  line-height: 1.7;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .clases {
-    padding: 0 20px 80px;
-  }
-  .clases__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .como-entrenamos__paso {
-    padding: 0 20px;
-  }
-}
-@media (max-width: 767px) {
-  .clases {
-    padding: 0 20px 80px;
-  }
-  .clases__grid {
-    grid-template-columns: 1fr;
-    max-width: 400px;
-  }
-  .clase__overlay {
-    background-color: rgba(13, 13, 13, 0.65);
-  }
-  .clase__overlay p {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  .como-entrenamos__pasos {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-  .como-entrenamos__paso {
-    padding: 0 10px;
-  }
-  .como-entrenamos__paso:not(:last-child) {
-    padding-bottom: 40px;
-    border-right: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-  }
-}
-.clases {
-  background-color: #0D0D0D;
-  color: #FFFFFF;
-  padding: 90px 20px;
 }
 .clases__intro {
-  max-width: 1100px;
-  margin: 0 auto 50px;
-  text-align: center;
+  max-width: 700px;
+  margin-bottom: 60px;
+}
+.clases__intro span {
+  display: block;
+  margin-bottom: 15px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #9955C2;
 }
 .clases__intro h2 {
-  margin: 0 0 15px;
-  color: #FFFFFF;
+  margin: 0;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 0.9;
+  letter-spacing: 1px;
 }
 .clases__intro p {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 25px 0 0;
   font-family: "Barlow Condensed", sans-serif;
   font-size: 1.2rem;
   line-height: 1.5;
-  color: rgba(255, 255, 255, 0.65);
+  color: rgba(255, 255, 255, 0.7);
 }
-.clases__modalidades {
-  max-width: 1100px;
-  margin: 0 auto 50px;
+.clases__lista {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
 }
-.clases__modalidad {
-  padding: 18px 20px;
-  text-align: center;
+.clases__item {
+  min-height: 240px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #2A1C33;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+  transition: background-color 0.3s ease;
+  transform: 0.3s ease;
 }
-.clases__modalidad:not(:last-child) {
-  border-right: 1px solid rgba(84, 76, 89, 0.45);
-}
-.clases__modalidad h3 {
+.clases h3 {
   margin: 0;
   font-family: "Bebas Neue", sans-serif;
-  font-size: clamp(1.7rem, 2.5vw, 2.4rem);
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  line-height: 0.9;
   letter-spacing: 1px;
-  color: #9955C2;
-}
-.clases__horarios {
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-.clases__horarios > h3 {
-  margin: 0 0 25px;
-  text-align: center;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 3rem;
-  letter-spacing: 1.5px;
-  color: #FFFFFF;
-}
-.clases__tabla-wrapper {
-  width: 100%;
-  overflow-x: auto;
-}
-.clases__tabla {
-  width: 100%;
-  border-collapse: collapse;
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 0.95rem;
-  text-align: center;
-}
-.clases__tabla th,
-.clases__tabla td {
-  padding: 11px 8px;
-  border-bottom: 1px solid rgba(84, 76, 89, 0.25);
-}
-.clases__tabla thead th {
-  padding: 14px 8px;
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  color: #9955C2;
-  border-bottom: 1px solid rgba(153, 85, 194, 0.5);
-}
-.clases__tabla tbody th {
-  color: #9955C2;
-  font-weight: 500;
-  white-space: nowrap;
-  background-color: rgba(46, 38, 51, 0.35);
-  border-right: 1px solid rgba(84, 76, 89, 0.35);
-}
-.clases__tabla tbody td {
-  color: rgba(255, 255, 255, 0.65);
-  line-height: 1.3;
-}
-.clases__tabla tbody tr {
-  transition: background-color 0.25s ease;
-}
-.clases__tabla tbody tr:hover {
-  background-color: rgba(153, 85, 194, 0.06);
 }
 
-@media (max-width: 767px) {
-  .clases {
-    padding: 70px 15px;
-  }
-  .clases__intro {
-    margin-bottom: 40px;
-  }
-  .clases__intro h2 {
-    font-size: 2.5rem;
-  }
-  .clases__intro p {
-    font-size: 1.05rem;
-  }
-  .clases__modalidades {
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 55px;
-  }
-  .clases__modalidad {
-    padding: 15px 10px;
-  }
-  .clases__modalidad:not(:last-child) {
-    border-right: none;
-  }
-  .clases__modalidad:nth-child(odd) {
-    border-right: 1px solid rgba(84, 76, 89, 0.45);
-  }
-  .clases__modalidad:nth-child(-n+2) {
-    border-bottom: 1px solid rgba(84, 76, 89, 0.45);
-  }
-  .clases__modalidad h3 {
-    font-size: 1.8rem;
-  }
-  .clases__horarios {
-    max-width: 100%;
-  }
-  .clases__horarios > h3 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  .clases__tabla-wrapper {
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-  .clases__tabla {
-    min-width: 700px;
-    font-size: 0.9rem;
-  }
-  .clases__tabla th,
-  .clases__tabla td {
-    padding: 10px 7px;
-  }
-  .clases__tabla thead th {
-    font-size: 1.1rem;
-    padding: 12px 7px;
-  }
-  .clases__tabla tbody th {
-    font-size: 0.9rem;
-  }
-  .clases__tabla tbody td {
-    font-size: 0.9rem;
-  }
-}
 .planes-intro {
   background-color: #0D0D0D;
   padding: 80px 20px;
